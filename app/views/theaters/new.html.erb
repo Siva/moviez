@@ -1,0 +1,31 @@
+<h1>New theater</h1>
+
+<% form_for :theater, :url => movie_theaters_path do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :address_city %><br />
+    <%= f.text_field :address_city %>
+  </p>
+  <p>
+    <%= f.label :address_state %><br />
+    <%= f.text_field :address_state %>
+  </p>
+  <p>
+    <%= f.label :address_zip %><br />
+    <%= f.text_field :address_zip %>
+  </p>
+  <p>
+    <%= f.label :address_street %><br />
+    <%= f.text_field :address_street %>
+  </p>
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+

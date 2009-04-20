@@ -1,5 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :movies
+  
+  map.resources :movies do |movies|
+    movies.resources :theaters
+  end
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:

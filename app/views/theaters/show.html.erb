@@ -1,0 +1,28 @@
+<p>
+  <b>Name:</b>
+  <%=h @theater.name %>
+</p>
+
+<p>
+  <b>Address city:</b>
+  <%=h @theater.address_city %>
+</p>
+
+<p>
+  <b>Address state:</b>
+  <%=h @theater.address_state %>
+</p>
+
+<p>
+  <b>Address zip:</b>
+  <%=h @theater.address_zip %>
+</p>
+
+<p>
+  <b>Address street:</b>
+  <%=h @theater.address_street %>
+</p>
+
+
+<%= link_to 'Edit', edit_movie_theater_path(@theater) %> |
+<%= link_to 'Back', movie_theaters_path %>

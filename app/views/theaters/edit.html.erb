@@ -1,0 +1,32 @@
+<h1>Editing theater</h1>
+
+<% form_for :theater do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :address_city %><br />
+    <%= f.text_field :address_city %>
+  </p>
+  <p>
+    <%= f.label :address_state %><br />
+    <%= f.text_field :address_state %>
+  </p>
+  <p>
+    <%= f.label :address_zip %><br />
+    <%= f.text_field :address_zip %>
+  </p>
+  <p>
+    <%= f.label :address_street %><br />
+    <%= f.text_field :address_street %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', movie_theater_path(@theater) %> |
+<%= link_to 'Back', movie_theaters_path %>
