@@ -10,6 +10,10 @@ class Test::Unit::TestCase
 end
 
 
+Factory.sequence :name do |u|
+  "Movie name #{u}"
+end
+
 Factory.define :movie do |u|
-  u.title 'Movie Name'
+  u.title  { Factory.sequence(:name) }
 end
