@@ -16,13 +16,13 @@
     <td><%=h theater.address_state %></td>
     <td><%=h theater.address_zip %></td>
     <td><%=h theater.address_street %></td>
-    <td><%= link_to 'Show', movie_theater_path(@theater) %></td>
-    <td><%= link_to 'Edit', edit_movie_theater_path(@theater) %></td>
-    <td><%= link_to 'Destroy', movie_theater_path(@theater), :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Show', theater %></td>
+    <td><%= link_to 'Edit', edit_movie_path(theater) %></td>
+    <td><%= link_to 'Destroy', theater, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New theater', new_movie_theaters_path %>
+<%= link_to 'New theater', new_theater_path %>
