@@ -1,6 +1,7 @@
 require 'test_helper'
 
 class MoviesControllerTest < ActionController::TestCase
+
   test "should get index" do
     get :index
     assert_response :success
@@ -21,7 +22,8 @@ class MoviesControllerTest < ActionController::TestCase
   end
 
   test "should show movie" do
-    get :show, :id => movies(:one).id
+    @movie = Factory(:movie)
+    get :show, :id => @movie.id
     assert_response :success
   end
 

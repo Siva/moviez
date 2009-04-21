@@ -8,3 +8,8 @@ class Test::Unit::TestCase
   self.use_instantiated_fixtures  = false
   fixtures :all
 end
+
+
+Factory.define :movie do |u|
+  u.title 'Movie Name'
+end
