@@ -1,0 +1,61 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.7	//
+ApplicationController	app/controllers/application.rb	/^class ApplicationController < ActionController::Base$/;"	c
+ApplicationHelper	app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	m
+Boot	config/boot.rb	/^  class Boot$/;"	c
+BrowsingTest	test/performance/browsing_test.rb	/^class BrowsingTest < ActionController::PerformanceTest$/;"	c
+CreateMovies	db/migrate/20090420044013_create_movies.rb	/^class CreateMovies < ActiveRecord::Migration$/;"	c
+CreateTheaters	db/migrate/20090420045027_create_theaters.rb	/^class CreateTheaters < ActiveRecord::Migration$/;"	c
+GemBoot	config/boot.rb	/^  class GemBoot < Boot$/;"	c
+Movie	app/models/movie.rb	/^class Movie < ActiveRecord::Base$/;"	c
+MovieTest	test/unit/movie_test.rb	/^class MovieTest < ActiveSupport::TestCase$/;"	c
+MoviesController	app/controllers/movies_controller.rb	/^class MoviesController < ApplicationController$/;"	c
+MoviesControllerTest	test/functional/movies_controller_test.rb	/^class MoviesControllerTest < ActionController::TestCase$/;"	c
+MoviesHelper	app/helpers/movies_helper.rb	/^module MoviesHelper$/;"	m
+Rails	config/boot.rb	/^module Rails$/;"	m
+Test	test/test_helper.rb	/^class Test::Unit::TestCase$/;"	c
+Theater	app/models/theater.rb	/^class Theater < ActiveRecord::Base$/;"	c
+TheaterTest	test/unit/theater_test.rb	/^class TheaterTest < ActiveSupport::TestCase$/;"	c
+TheatersController	app/controllers/theaters_controller.rb	/^class TheatersController < ApplicationController$/;"	c
+TheatersControllerTest	test/functional/theaters_controller_test.rb	/^class TheatersControllerTest < ActionController::TestCase$/;"	c
+TheatersHelper	app/helpers/theaters_helper.rb	/^module TheatersHelper$/;"	m
+VendorBoot	config/boot.rb	/^  class VendorBoot < Boot$/;"	c
+about	public/index.html	/^      function about() {$/;"	f
+boot!	config/boot.rb	/^    def boot!$/;"	f	class:Rails
+booted?	config/boot.rb	/^    def booted?$/;"	f	class:Rails
+create	app/controllers/movies_controller.rb	/^  def create$/;"	f	class:MoviesController
+create	app/controllers/theaters_controller.rb	/^  def create$/;"	f	class:TheatersController
+destroy	app/controllers/movies_controller.rb	/^  def destroy$/;"	f	class:MoviesController
+destroy	app/controllers/theaters_controller.rb	/^  def destroy$/;"	f	class:TheatersController
+down	db/migrate/20090420044013_create_movies.rb	/^  def self.down$/;"	F	class:CreateMovies
+down	db/migrate/20090420045027_create_theaters.rb	/^  def self.down$/;"	F	class:CreateTheaters
+edit	app/controllers/movies_controller.rb	/^  def edit$/;"	f	class:MoviesController
+edit	app/controllers/theaters_controller.rb	/^  def edit$/;"	f	class:TheatersController
+gem_version	config/boot.rb	/^      def gem_version$/;"	f	class:GemBoot
+index	app/controllers/movies_controller.rb	/^  def index$/;"	f	class:MoviesController
+index	app/controllers/theaters_controller.rb	/^  def index$/;"	f	class:TheatersController
+load_initializer	config/boot.rb	/^    def load_initializer$/;"	f	class:GemBoot
+load_initializer	config/boot.rb	/^    def load_initializer$/;"	f	class:VendorBoot
+load_rails_gem	config/boot.rb	/^    def load_rails_gem$/;"	f	class:GemBoot
+load_rubygems	config/boot.rb	/^      def load_rubygems$/;"	f	class:GemBoot
+new	app/controllers/movies_controller.rb	/^  def new$/;"	f	class:MoviesController
+new	app/controllers/theaters_controller.rb	/^  def new$/;"	f	class:TheatersController
+parse_gem_version	config/boot.rb	/^      def parse_gem_version(text)$/;"	f	class:GemBoot
+pick_boot	config/boot.rb	/^    def pick_boot$/;"	f	class:Rails
+preinitialize	config/boot.rb	/^    def preinitialize$/;"	f	class:Rails
+preinitializer_path	config/boot.rb	/^    def preinitializer_path$/;"	f	class:Rails
+read_environment_rb	config/boot.rb	/^        def read_environment_rb$/;"	f	class:GemBoot
+rubygems_version	config/boot.rb	/^      def rubygems_version$/;"	f	class:GemBoot
+run	config/boot.rb	/^    def run$/;"	f	class:Boot
+show	app/controllers/movies_controller.rb	/^  def show$/;"	f	class:MoviesController
+show	app/controllers/theaters_controller.rb	/^  def show$/;"	f	class:TheatersController
+test_homepage	test/performance/browsing_test.rb	/^  def test_homepage$/;"	f	class:BrowsingTest
+up	db/migrate/20090420044013_create_movies.rb	/^  def self.up$/;"	F	class:CreateMovies
+up	db/migrate/20090420045027_create_theaters.rb	/^  def self.up$/;"	F	class:CreateTheaters
+update	app/controllers/movies_controller.rb	/^  def update$/;"	f	class:MoviesController
+update	app/controllers/theaters_controller.rb	/^  def update$/;"	f	class:TheatersController
+vendor_rails?	config/boot.rb	/^    def vendor_rails?$/;"	f	class:Rails

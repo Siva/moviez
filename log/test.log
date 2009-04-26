@@ -3060,3 +3060,200 @@ Processing MoviesController#update (for 0.0.0.0 at 2009-04-20 21:41:05) [PUT]
   [4;36;1mMovie Load (0.2ms)[0m   [0;1mSELECT * FROM "movies" WHERE ("movies"."id" = 953125641) [0m
 Redirected to #<Movie:0x24f88d0>
 Completed in 3ms (DB: 0) | 302 Found [http://test.host/movies/953125641?]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "movies" [0m
+
+
+Processing MoviesController#create (for 0.0.0.0 at 2009-04-20 21:54:16) [POST]
+  Parameters: {"movie"=>{}}
+  [4;35;1mMovie Create (0.5ms)[0m   [0mINSERT INTO "movies" ("created_at", "title", "updated_at", "cast") VALUES('2009-04-21 01:54:16', NULL, '2009-04-21 01:54:16', NULL)[0m
+Redirected to #<Movie:0x253e0d8>
+Completed in 9ms (DB: 2) | 302 Found [http://test.host/movies?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "movies" [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "movies" [0m
+  [4;36;1mMovie Load (0.3ms)[0m   [0;1mSELECT * FROM "movies" WHERE ("movies"."id" = 953125641) [0m
+
+
+Processing MoviesController#destroy (for 0.0.0.0 at 2009-04-20 21:54:16) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mMovie Load (0.3ms)[0m   [0mSELECT * FROM "movies" WHERE ("movies"."id" = 953125641) [0m
+  [4;36;1mMovie Destroy (0.4ms)[0m   [0;1mDELETE FROM "movies" WHERE "id" = 953125641[0m
+Redirected to http://test.host/movies
+Completed in 3ms (DB: 2) | 302 Found [http://test.host/movies/953125641]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "movies" [0m
+  [4;36;1mMovie Load (0.4ms)[0m   [0;1mSELECT * FROM "movies" WHERE ("movies"."id" = 953125641) [0m
+
+
+Processing MoviesController#edit (for 0.0.0.0 at 2009-04-20 21:54:16) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mMovie Load (0.3ms)[0m   [0mSELECT * FROM "movies" WHERE ("movies"."id" = 953125641) [0m
+Rendering template within layouts/movies
+Rendering movies/edit
+Completed in 6ms (View: 5, DB: 1) | 200 OK [http://test.host/movies/953125641/edit]
+
+
+Processing MoviesController#index (for 0.0.0.0 at 2009-04-20 21:54:16) [GET]
+  [4;36;1mMovie Load (0.3ms)[0m   [0;1mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/movies]
+
+
+Processing MoviesController#new (for 0.0.0.0 at 2009-04-20 21:54:16) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/movies/new]
+  [4;35;1mMovie Create (0.4ms)[0m   [0mINSERT INTO "movies" ("created_at", "title", "updated_at", "cast") VALUES('2009-04-21 01:54:16', '--- !ruby/object:Factory::Sequence 
+proc: 
+value: 0
+', '2009-04-21 01:54:16', NULL)[0m
+
+
+Processing MoviesController#show (for 0.0.0.0 at 2009-04-20 21:54:16) [GET]
+  Parameters: {"id"=>"953125642"}
+  [4;36;1mMovie Load (0.2ms)[0m   [0;1mSELECT * FROM "movies" WHERE ("movies"."id" = 953125642) [0m
+Rendering template within layouts/movies
+Rendering movies/show
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/movies/953125642]
+  [4;35;1mMovie Load (0.5ms)[0m   [0mSELECT * FROM "movies" WHERE ("movies"."id" = 953125641) [0m
+
+
+Processing MoviesController#update (for 0.0.0.0 at 2009-04-20 21:54:16) [PUT]
+  Parameters: {"id"=>"953125641", "movie"=>{}}
+  [4;36;1mMovie Load (0.4ms)[0m   [0;1mSELECT * FROM "movies" WHERE ("movies"."id" = 953125641) [0m
+Redirected to #<Movie:0x24ee380>
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/movies/953125641?]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "theaters" [0m
+
+
+Processing TheatersController#create (for 0.0.0.0 at 2009-04-20 21:54:16) [POST]
+  Parameters: {"theater"=>{}}
+  [4;36;1mTheater Create (0.4ms)[0m   [0;1mINSERT INTO "theaters" ("name", "address_city", "created_at", "address_zip", "updated_at", "address_street", "address_state") VALUES(NULL, NULL, '2009-04-21 01:54:16', NULL, '2009-04-21 01:54:16', NULL, NULL)[0m
+Redirected to #<Theater:0x24e2f80>
+Completed in 9ms (DB: 1) | 302 Found [http://test.host/theaters?]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "theaters" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "theaters" [0m
+  [4;35;1mTheater Load (0.2ms)[0m   [0mSELECT * FROM "theaters" WHERE ("theaters"."id" = 953125641) [0m
+
+
+Processing TheatersController#destroy (for 0.0.0.0 at 2009-04-20 21:54:16) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mTheater Load (0.3ms)[0m   [0;1mSELECT * FROM "theaters" WHERE ("theaters"."id" = 953125641) [0m
+  [4;35;1mTheater Destroy (0.2ms)[0m   [0mDELETE FROM "theaters" WHERE "id" = 953125641[0m
+Redirected to http://test.host/theaters
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/theaters/953125641]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "theaters" [0m
+  [4;35;1mTheater Load (0.3ms)[0m   [0mSELECT * FROM "theaters" WHERE ("theaters"."id" = 953125641) [0m
+
+
+Processing TheatersController#edit (for 0.0.0.0 at 2009-04-20 21:54:16) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mTheater Load (0.2ms)[0m   [0;1mSELECT * FROM "theaters" WHERE ("theaters"."id" = 953125641) [0m
+Rendering template within layouts/theaters
+Rendering theaters/edit
+Completed in 48ms (View: 47, DB: 1) | 200 OK [http://test.host/theaters/953125641/edit]
+
+
+Processing TheatersController#index (for 0.0.0.0 at 2009-04-20 21:54:16) [GET]
+  [4;35;1mTheater Load (0.4ms)[0m   [0mSELECT * FROM "theaters" [0m
+Rendering template within layouts/theaters
+Rendering theaters/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/theaters]
+
+
+Processing TheatersController#new (for 0.0.0.0 at 2009-04-20 21:54:16) [GET]
+Rendering template within layouts/theaters
+Rendering theaters/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/theaters/new]
+  [4;36;1mTheater Load (0.3ms)[0m   [0;1mSELECT * FROM "theaters" WHERE ("theaters"."id" = 953125641) [0m
+
+
+Processing TheatersController#show (for 0.0.0.0 at 2009-04-20 21:54:16) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mTheater Load (0.3ms)[0m   [0mSELECT * FROM "theaters" WHERE ("theaters"."id" = 953125641) [0m
+Rendering template within layouts/theaters
+Rendering theaters/show
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/theaters/953125641]
+  [4;36;1mTheater Load (0.3ms)[0m   [0;1mSELECT * FROM "theaters" WHERE ("theaters"."id" = 953125641) [0m
+
+
+Processing TheatersController#update (for 0.0.0.0 at 2009-04-20 21:54:16) [PUT]
+  Parameters: {"id"=>"953125641", "theater"=>{}}
+  [4;35;1mTheater Load (0.2ms)[0m   [0mSELECT * FROM "theaters" WHERE ("theaters"."id" = 953125641) [0m
+Redirected to #<Theater:0x29273c0>
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/theaters/953125641?]
+
+
+Processing MoviesController#index (for 0.0.0.0 at 2009-04-25 22:04:22) [GET]
+  [4;36;1mMovie Load (0.5ms)[0m   [0;1mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 11ms (View: 6, DB: 2) | 200 OK [http://test.host/movies]
+
+
+Processing MoviesController#index (for 0.0.0.0 at 2009-04-25 22:04:22) [GET]
+  [4;35;1mMovie Load (0.4ms)[0m   [0mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/movies]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "movies" [0m
+
+
+Processing MoviesController#create (for 0.0.0.0 at 2009-04-25 22:04:22) [POST]
+  Parameters: {"movie"=>{}}
+  [4;35;1mMovie Create (0.3ms)[0m   [0mINSERT INTO "movies" ("created_at", "title", "updated_at", "cast") VALUES('2009-04-26 02:04:22', NULL, '2009-04-26 02:04:22', NULL)[0m
+Redirected to #<Movie:0x250a774>
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/movies?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "movies" [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "movies" [0m
+  [4;36;1mMovie Load (0.3ms)[0m   [0;1mSELECT * FROM "movies" WHERE ("movies"."id" = 953125641) [0m
+
+
+Processing MoviesController#destroy (for 0.0.0.0 at 2009-04-25 22:04:22) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mMovie Load (0.3ms)[0m   [0mSELECT * FROM "movies" WHERE ("movies"."id" = 953125641) [0m
+  [4;36;1mMovie Destroy (0.4ms)[0m   [0;1mDELETE FROM "movies" WHERE "id" = 953125641[0m
+Redirected to http://test.host/movies
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/movies/953125641]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "movies" [0m
+  [4;36;1mMovie Load (0.5ms)[0m   [0;1mSELECT * FROM "movies" WHERE ("movies"."id" = 953125641) [0m
+
+
+Processing MoviesController#edit (for 0.0.0.0 at 2009-04-25 22:04:22) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mMovie Load (0.3ms)[0m   [0mSELECT * FROM "movies" WHERE ("movies"."id" = 953125641) [0m
+Rendering template within layouts/movies
+Rendering movies/edit
+Completed in 5ms (View: 4, DB: 1) | 200 OK [http://test.host/movies/953125641/edit]
+
+
+Processing MoviesController#index (for 0.0.0.0 at 2009-04-25 22:04:22) [GET]
+  [4;36;1mMovie Load (0.5ms)[0m   [0;1mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://test.host/movies]
+
+
+Processing MoviesController#new (for 0.0.0.0 at 2009-04-25 22:04:22) [GET]
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/movies/new]
+  [4;35;1mMovie Create (0.5ms)[0m   [0mINSERT INTO "movies" ("created_at", "title", "updated_at", "cast") VALUES('2009-04-26 02:04:22', '--- !ruby/object:Factory::Sequence 
+proc: 
+value: 0
+', '2009-04-26 02:04:22', NULL)[0m
+
+
+Processing MoviesController#show (for 0.0.0.0 at 2009-04-25 22:04:22) [GET]
+  Parameters: {"id"=>"953125642"}
+  [4;36;1mMovie Load (0.3ms)[0m   [0;1mSELECT * FROM "movies" WHERE ("movies"."id" = 953125642) [0m
+Rendering template within layouts/movies
+Rendering movies/show
+Completed in 3ms (View: 1, DB: 1) | 200 OK [http://test.host/movies/953125642]
+  [4;35;1mMovie Load (0.3ms)[0m   [0mSELECT * FROM "movies" WHERE ("movies"."id" = 953125641) [0m
+
+
+Processing MoviesController#update (for 0.0.0.0 at 2009-04-25 22:04:22) [PUT]
+  Parameters: {"id"=>"953125641", "movie"=>{}}
+  [4;36;1mMovie Load (0.2ms)[0m   [0;1mSELECT * FROM "movies" WHERE ("movies"."id" = 953125641) [0m
+Redirected to #<Movie:0x249ce40>
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/movies/953125641?]

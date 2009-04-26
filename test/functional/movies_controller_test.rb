@@ -1,6 +1,12 @@
-require 'test_helper'
+require File.expand_path(File.dirname(__FILE__) + "/../test_helper")
 
 class MoviesControllerTest < ActionController::TestCase
+
+  context "GET:" do
+    setup { get :index }
+    should_assign_to(:movies)
+    should_respond_with(:success)
+  end
 
   test "should get index" do
     get :index
