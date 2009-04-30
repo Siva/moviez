@@ -3,51 +3,39 @@ require File.expand_path(File.dirname(__FILE__) + "/../test_helper")
 class MoviesControllerTest < ActionController::TestCase
 
   context "GET:" do
-    setup { get :index }
+    setup do
+      get :index
+    end
     should_assign_to(:movies)
     should_respond_with(:success)
   end
-
-  test "should get index" do
-    get :index
-    assert_response :success
-    assert_not_nil assigns(:movies)
+  
+  context "on GET to :show for first record" do
+      setup do
+        @movie = Factory(:movie)
+        get :show, :id => @movie.id
+      end
+      should_assign_to :movie
+      should_respond_with :success
+      should_render_template :show
+      should_not_set_the_flash
+      should "do something else really cool" do
+        assert_equal @movie.id, assigns(:movie).id
+      end
   end
-
-  test "should get new" do
-    get :new
-    assert_response :success
-  end
-
-  test "should create movie" do
-    assert_difference('Movie.count') do
-      post :create, :movie => { }
+  
+  context "on GET to :new" do
+    setup do
+      get :new
     end
-
-    assert_redirected_to movie_path(assigns(:movie))
+    should_assign_to :movie
+    should_respond_with :success
+    should_render_template :new
+    should_not_set_the_flash
   end
-
-  test "should show movie" do
-    @movie = Factory(:movie)
-    get :show, :id => @movie.id
-    assert_response :success
-  end
-
-  test "should get edit" do
-    get :edit, :id => movies(:one).id
-    assert_response :success
-  end
-
-  test "should update movie" do
-    put :update, :id => movies(:one).id, :movie => { }
-    assert_redirected_to movie_path(assigns(:movie))
-  end
-
-  test "should destroy movie" do
-    assert_difference('Movie.count', -1) do
-      delete :destroy, :id => movies(:one).id
-    end
-
-    assert_redirected_to movies_path
-  end
+  
+  
+  
+    
+  
 end
